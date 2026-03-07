@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Happy Women's Day</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+background:#04161d;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial;
+color:white;
+text-align:center;
+overflow:hidden;
+}
+
+/* chữ */
+
+.title{
+font-size:40px;
+color:#ff6aa9;
+margin-bottom:10px;
+}
+
+.message{
+font-size:18px;
+margin-bottom:40px;
+}
+
+/* khu vực hoa */
+
+.flowers{
+position:relative;
+height:300px;
+}
+
+/* từng bông hoa */
+
+.flower{
+position:absolute;
+bottom:0;
+animation:sway 4s ease-in-out infinite;
+transform-origin:bottom;
+}
+
+.f1{left:-120px; animation-delay:0s;}
+.f2{left:0px; animation-delay:1s;}
+.f3{left:120px; animation-delay:2s;}
+
+.stem{
+width:6px;
+height:180px;
+background:#6a4a2c;
+margin:auto;
+}
+
+.petal{
+width:60px;
+height:60px;
+background:pink;
+border-radius:50%;
+margin:auto;
+margin-top:-20px;
+box-shadow:
+-30px 0 pink,
+30px 0 pink,
+0 -30px pink;
+}
+
+/* animation gió */
+
+@keyframes sway{
+
+0%{transform:rotate(-5deg);}
+50%{transform:rotate(5deg);}
+100%{transform:rotate(-5deg);}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="scene">
+
+<h1 class="title">Happy Women's Day 💖</h1>
+
+<p class="message">
+Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
+🌸 💖 Luôn luôn rạng rỡ 💖 🌸
+</p>
+
+<div class="flowers">
+
+<div class="flower f1">
+<div class="stem"></div>
+<div class="petal"></div>
+</div>
+
+<div class="flower f2">
+<div class="stem"></div>
+<div class="petal"></div>
+</div>
+
+<div class="flower f3">
+<div class="stem"></div>
+<div class="petal"></div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
