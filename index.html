@@ -97,6 +97,29 @@ transform-origin:bottom;
 .flower-real circle{
 filter:drop-shadow(0 0 12px rgba(255,120,170,0.7));
 }
+
+.grass{
+position:absolute;
+bottom:-10px;
+left:50%;
+transform:translateX(-50%);
+width:200px;
+height:100px;
+}
+
+.blade{
+position:absolute;
+bottom:0;
+width:6px;
+height:80px;
+background:linear-gradient(#0a5a2c,#1ecb5a);
+border-radius:50px;
+}
+
+.g1{left:20px; transform:rotate(-25deg);}
+.g2{left:60px; transform:rotate(-10deg);}
+.g3{left:120px; transform:rotate(10deg);}
+.g4{left:160px; transform:rotate(25deg);}  
   
 </style>
 </head>
@@ -105,11 +128,11 @@ filter:drop-shadow(0 0 12px rgba(255,120,170,0.7));
 
 <div class="scene">
 
-<h1 class="title">Happy Women's Day 💖</h1>
+<h1 class="title">Happy Women's Day </h1>
 
 <p class="message">
 Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
-🌸 💖 Luôn luôn rạng rỡ 💖 🌸
+🌸🌸 💖 Luôn luôn rạng rỡ 💖 🌸🌸
 </p>
 
 <div class="garden">
@@ -134,7 +157,14 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
   <circle cx="100" cy="100" r="12" fill="#ffd166"/>
 
 </svg>
-
+  
+<div class="grass">
+  <div class="blade g1"></div>
+  <div class="blade g2"></div>
+  <div class="blade g3"></div>
+  <div class="blade g4"></div>
+</div>
+  
 </div>
 
 </div>
