@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -30,20 +29,20 @@ margin-bottom:10px;
 
 .message{
 font-size:18px;
-margin-bottom:60px;
+margin-bottom:70px;
 }
 
 /* garden */
 
 .garden{
 display:flex;
-gap:120px;
+gap:140px;
 }
 
-/* cây */
+/* plant */
 
 .plant{
-width:140px;
+width:170px;
 animation:sway 4s ease-in-out infinite;
 transform-origin:bottom center;
 }
@@ -51,14 +50,10 @@ transform-origin:bottom center;
 .p2{animation-delay:1s;}
 .p3{animation-delay:2s;}
 
-/* gió */
-
 @keyframes sway{
-
 0%{transform:rotate(-6deg);}
 50%{transform:rotate(6deg);}
 100%{transform:rotate(-6deg);}
-
 }
 
 /* glow */
@@ -83,79 +78,82 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 
 <div class="garden">
 
-<!-- cây 1 -->
+<!-- plant 1 -->
 
-<svg viewBox="0 0 200 300" class="plant p1">
+<svg viewBox="0 0 200 360" class="plant">
 
 <!-- stem -->
-<rect x="97" y="120" width="6" height="140" fill="#6a4a2c"/>
+<rect x="97" y="120" width="6" height="190" fill="#6a4a2c"/>
 
 <!-- leaves -->
-<ellipse cx="80" cy="200" rx="22" ry="10" fill="#1f7a3f" transform="rotate(-30 80 200)"/>
-<ellipse cx="120" cy="210" rx="22" ry="10" fill="#1f7a3f" transform="rotate(30 120 210)"/>
+<ellipse cx="75" cy="230" rx="28" ry="14" fill="#1f7a3f" transform="rotate(-35 75 230)"/>
+<ellipse cx="125" cy="250" rx="28" ry="14" fill="#1f7a3f" transform="rotate(35 125 250)"/>
 
 <!-- flower -->
-<circle cx="100" cy="90" r="30" fill="#ff7aa8" class="petal"/>
-<circle cx="70" cy="90" r="20" fill="#ff9dc0" class="petal"/>
-<circle cx="130" cy="90" r="20" fill="#ff9dc0" class="petal"/>
-<circle cx="100" cy="60" r="20" fill="#ff9dc0" class="petal"/>
-<circle cx="100" cy="120" r="20" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="90" r="38" fill="#ff7aa8" class="petal"/>
+<circle cx="60" cy="90" r="26" fill="#ff9dc0" class="petal"/>
+<circle cx="140" cy="90" r="26" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="50" r="26" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="130" r="26" fill="#ff9dc0" class="petal"/>
 
-<!-- center -->
-<circle cx="100" cy="90" r="10" fill="#ffd166"/>
+<circle cx="100" cy="90" r="14" fill="#ffd166"/>
 
-<!-- grass -->
-<rect x="70" y="260" width="6" height="40" fill="#1ecb5a" transform="rotate(-20 70 260)"/>
-<rect x="90" y="260" width="6" height="40" fill="#1ecb5a"/>
-<rect x="110" y="260" width="6" height="40" fill="#1ecb5a" transform="rotate(20 110 260)"/>
-
-</svg>
-
-
-<!-- cây 2 -->
-
-<svg viewBox="0 0 200 300" class="plant p2">
-
-<rect x="97" y="120" width="6" height="140" fill="#6a4a2c"/>
-
-<ellipse cx="80" cy="200" rx="22" ry="10" fill="#1f7a3f" transform="rotate(-30 80 200)"/>
-<ellipse cx="120" cy="210" rx="22" ry="10" fill="#1f7a3f" transform="rotate(30 120 210)"/>
-
-<circle cx="100" cy="90" r="30" fill="#ff7aa8" class="petal"/>
-<circle cx="70" cy="90" r="20" fill="#ff9dc0" class="petal"/>
-<circle cx="130" cy="90" r="20" fill="#ff9dc0" class="petal"/>
-<circle cx="100" cy="60" r="20" fill="#ff9dc0" class="petal"/>
-<circle cx="100" cy="120" r="20" fill="#ff9dc0" class="petal"/>
-
-<circle cx="100" cy="90" r="10" fill="#ffd166"/>
-
-<rect x="70" y="260" width="6" height="40" fill="#1ecb5a" transform="rotate(-20 70 260)"/>
-<rect x="90" y="260" width="6" height="40" fill="#1ecb5a"/>
-<rect x="110" y="260" width="6" height="40" fill="#1ecb5a" transform="rotate(20 110 260)"/>
+<!-- long grass -->
+<rect x="55" y="310" width="6" height="90" fill="#1ecb5a" transform="rotate(-35 55 310)"/>
+<rect x="80" y="310" width="6" height="95" fill="#1ecb5a" transform="rotate(-15 80 310)"/>
+<rect x="100" y="310" width="6" height="100" fill="#1ecb5a"/>
+<rect x="120" y="310" width="6" height="95" fill="#1ecb5a" transform="rotate(15 120 310)"/>
+<rect x="145" y="310" width="6" height="90" fill="#1ecb5a" transform="rotate(35 145 310)"/>
 
 </svg>
 
+<!-- plant 2 -->
 
-<!-- cây 3 -->
+<svg viewBox="0 0 200 360" class="plant p2">
 
-<svg viewBox="0 0 200 300" class="plant p3">
+<rect x="97" y="120" width="6" height="190" fill="#6a4a2c"/>
 
-<rect x="97" y="120" width="6" height="140" fill="#6a4a2c"/>
+<ellipse cx="75" cy="230" rx="28" ry="14" fill="#1f7a3f" transform="rotate(-35 75 230)"/>
+<ellipse cx="125" cy="250" rx="28" ry="14" fill="#1f7a3f" transform="rotate(35 125 250)"/>
 
-<ellipse cx="80" cy="200" rx="22" ry="10" fill="#1f7a3f" transform="rotate(-30 80 200)"/>
-<ellipse cx="120" cy="210" rx="22" ry="10" fill="#1f7a3f" transform="rotate(30 120 210)"/>
+<circle cx="100" cy="90" r="38" fill="#ff7aa8" class="petal"/>
+<circle cx="60" cy="90" r="26" fill="#ff9dc0" class="petal"/>
+<circle cx="140" cy="90" r="26" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="50" r="26" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="130" r="26" fill="#ff9dc0" class="petal"/>
 
-<circle cx="100" cy="90" r="30" fill="#ff7aa8" class="petal"/>
-<circle cx="70" cy="90" r="20" fill="#ff9dc0" class="petal"/>
-<circle cx="130" cy="90" r="20" fill="#ff9dc0" class="petal"/>
-<circle cx="100" cy="60" r="20" fill="#ff9dc0" class="petal"/>
-<circle cx="100" cy="120" r="20" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="90" r="14" fill="#ffd166"/>
 
-<circle cx="100" cy="90" r="10" fill="#ffd166"/>
+<rect x="55" y="310" width="6" height="90" fill="#1ecb5a" transform="rotate(-35 55 310)"/>
+<rect x="80" y="310" width="6" height="95" fill="#1ecb5a" transform="rotate(-15 80 310)"/>
+<rect x="100" y="310" width="6" height="100" fill="#1ecb5a"/>
+<rect x="120" y="310" width="6" height="95" fill="#1ecb5a" transform="rotate(15 120 310)"/>
+<rect x="145" y="310" width="6" height="90" fill="#1ecb5a" transform="rotate(35 145 310)"/>
 
-<rect x="70" y="260" width="6" height="40" fill="#1ecb5a" transform="rotate(-20 70 260)"/>
-<rect x="90" y="260" width="6" height="40" fill="#1ecb5a"/>
-<rect x="110" y="260" width="6" height="40" fill="#1ecb5a" transform="rotate(20 110 260)"/>
+</svg>
+
+<!-- plant 3 -->
+
+<svg viewBox="0 0 200 360" class="plant p3">
+
+<rect x="97" y="120" width="6" height="190" fill="#6a4a2c"/>
+
+<ellipse cx="75" cy="230" rx="28" ry="14" fill="#1f7a3f" transform="rotate(-35 75 230)"/>
+<ellipse cx="125" cy="250" rx="28" ry="14" fill="#1f7a3f" transform="rotate(35 125 250)"/>
+
+<circle cx="100" cy="90" r="38" fill="#ff7aa8" class="petal"/>
+<circle cx="60" cy="90" r="26" fill="#ff9dc0" class="petal"/>
+<circle cx="140" cy="90" r="26" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="50" r="26" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="130" r="26" fill="#ff9dc0" class="petal"/>
+
+<circle cx="100" cy="90" r="14" fill="#ffd166"/>
+
+<rect x="55" y="310" width="6" height="90" fill="#1ecb5a" transform="rotate(-35 55 310)"/>
+<rect x="80" y="310" width="6" height="95" fill="#1ecb5a" transform="rotate(-15 80 310)"/>
+<rect x="100" y="310" width="6" height="100" fill="#1ecb5a"/>
+<rect x="120" y="310" width="6" height="95" fill="#1ecb5a" transform="rotate(15 120 310)"/>
+<rect x="145" y="310" width="6" height="90" fill="#1ecb5a" transform="rotate(35 145 310)"/>
 
 </svg>
 
@@ -165,4 +163,3 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 
 </body>
 </html>
-```
