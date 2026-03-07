@@ -32,95 +32,77 @@ font-size:18px;
 margin-bottom:40px;
 }
 
-/* khu vực hoa */
+/* khu vực */
 
-.flowers{
+.scene{
 position:relative;
+}
+
+/* vườn hoa */
+
+.garden{
+position:relative;
+display:flex;
+justify-content:center;
+align-items:flex-end;
 height:300px;
 }
 
-/* từng bông hoa */
-
-.flower{
-position:absolute;
-bottom:0;
-animation:sway 4s ease-in-out infinite;
-transform-origin:bottom;
-}
-
-.f1{left:-120px; animation-delay:0s;}
-.f2{left:0px; animation-delay:1s;}
-.f3{left:120px; animation-delay:2s;}
-
-.stem{
-width:6px;
-height:180px;
-background:#6a4a2c;
-margin:auto;
-}
-
-.petal{
-width:60px;
-height:60px;
-background:pink;
-border-radius:50%;
-margin:auto;
-margin-top:-20px;
-box-shadow:
--30px 0 pink,
-30px 0 pink,
-0 -30px pink;
-}
-
-/* animation gió */
-
-@keyframes sway{
-
-0%{transform:rotate(-5deg);}
-50%{transform:rotate(5deg);}
-100%{transform:rotate(-5deg);}
-
-}
-  
-.garden{
-display:flex;
-justify-content:center;
-margin-top:60px;
-}
+/* hoa */
 
 .flower-real{
-width:200px;
+width:180px;
+position:absolute;
+bottom:40px;
 animation:sway 4s ease-in-out infinite;
 transform-origin:bottom;
 }
+
+.f1{left:-160px; animation-delay:0s;}
+.f2{left:0px; animation-delay:1s;}
+.f3{left:160px; animation-delay:2s;}
 
 .flower-real circle{
 filter:drop-shadow(0 0 12px rgba(255,120,170,0.7));
 }
 
+/* gió */
+
+@keyframes sway{
+0%{transform:rotate(-5deg);}
+50%{transform:rotate(5deg);}
+100%{transform:rotate(-5deg);}
+}
+
+/* cỏ */
+
 .grass{
 position:absolute;
-bottom:-10px;
+bottom:0;
 left:50%;
 transform:translateX(-50%);
-width:200px;
-height:100px;
+width:320px;
+height:80px;
 }
 
 .blade{
 position:absolute;
 bottom:0;
 width:6px;
-height:80px;
+height:45px;
 background:linear-gradient(#0a5a2c,#1ecb5a);
 border-radius:50px;
 }
 
-.g1{left:20px; transform:rotate(-25deg);}
-.g2{left:60px; transform:rotate(-10deg);}
-.g3{left:120px; transform:rotate(10deg);}
-.g4{left:160px; transform:rotate(25deg);}  
-  
+.g1{left:10px; transform:rotate(-25deg);}
+.g2{left:40px; transform:rotate(-10deg);}
+.g3{left:70px; transform:rotate(10deg);}
+.g4{left:100px; transform:rotate(25deg);}
+.g5{left:140px; transform:rotate(-18deg);}
+.g6{left:180px; transform:rotate(0deg);}
+.g7{left:220px; transform:rotate(18deg);}
+.g8{left:260px; transform:rotate(25deg);}
+
 </style>
 </head>
 
@@ -128,7 +110,7 @@ border-radius:50px;
 
 <div class="scene">
 
-<h1 class="title">Happy Women's Day </h1>
+<h1 class="title">Happy Women's Day</h1>
 
 <p class="message">
 Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
@@ -137,34 +119,73 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 
 <div class="garden">
 
-<svg viewBox="0 0 200 300" class="flower-real">
+<!-- hoa trái -->
+<svg viewBox="0 0 200 300" class="flower-real f1">
 
-  <!-- stem -->
-  <rect x="97" y="120" width="6" height="120" fill="#5c3d1a"/>
+<rect x="97" y="90" width="6" height="170" fill="#5c3d1a"/>
 
-  <!-- leaves -->
-  <ellipse cx="80" cy="180" rx="25" ry="12" fill="#1f7a3f" transform="rotate(-30 80 180)"/>
-  <ellipse cx="120" cy="200" rx="25" ry="12" fill="#1f7a3f" transform="rotate(30 120 200)"/>
+<ellipse cx="80" cy="180" rx="25" ry="12" fill="#1f7a3f" transform="rotate(-30 80 180)"/>
+<ellipse cx="120" cy="200" rx="25" ry="12" fill="#1f7a3f" transform="rotate(30 120 200)"/>
 
-  <!-- petals -->
-  <circle cx="100" cy="100" r="35" fill="#ff7aa8"/>
-  <circle cx="70" cy="100" r="25" fill="#ff9dc0"/>
-  <circle cx="130" cy="100" r="25" fill="#ff9dc0"/>
-  <circle cx="100" cy="70" r="25" fill="#ff9dc0"/>
-  <circle cx="100" cy="130" r="25" fill="#ff9dc0"/>
+<circle cx="100" cy="100" r="35" fill="#ff7aa8"/>
+<circle cx="70" cy="100" r="25" fill="#ff9dc0"/>
+<circle cx="130" cy="100" r="25" fill="#ff9dc0"/>
+<circle cx="100" cy="70" r="25" fill="#ff9dc0"/>
+<circle cx="100" cy="130" r="25" fill="#ff9dc0"/>
 
-  <!-- center -->
-  <circle cx="100" cy="100" r="12" fill="#ffd166"/>
+<circle cx="100" cy="100" r="12" fill="#ffd166"/>
 
 </svg>
-  
+
+<!-- hoa giữa -->
+<svg viewBox="0 0 200 300" class="flower-real f2">
+
+<rect x="97" y="90" width="6" height="170" fill="#5c3d1a"/>
+
+<ellipse cx="80" cy="180" rx="25" ry="12" fill="#1f7a3f" transform="rotate(-30 80 180)"/>
+<ellipse cx="120" cy="200" rx="25" ry="12" fill="#1f7a3f" transform="rotate(30 120 200)"/>
+
+<circle cx="100" cy="100" r="35" fill="#ff7aa8"/>
+<circle cx="70" cy="100" r="25" fill="#ff9dc0"/>
+<circle cx="130" cy="100" r="25" fill="#ff9dc0"/>
+<circle cx="100" cy="70" r="25" fill="#ff9dc0"/>
+<circle cx="100" cy="130" r="25" fill="#ff9dc0"/>
+
+<circle cx="100" cy="100" r="12" fill="#ffd166"/>
+
+</svg>
+
+<!-- hoa phải -->
+<svg viewBox="0 0 200 300" class="flower-real f3">
+
+<rect x="97" y="90" width="6" height="170" fill="#5c3d1a"/>
+
+<ellipse cx="80" cy="180" rx="25" ry="12" fill="#1f7a3f" transform="rotate(-30 80 180)"/>
+<ellipse cx="120" cy="200" rx="25" ry="12" fill="#1f7a3f" transform="rotate(30 120 200)"/>
+
+<circle cx="100" cy="100" r="35" fill="#ff7aa8"/>
+<circle cx="70" cy="100" r="25" fill="#ff9dc0"/>
+<circle cx="130" cy="100" r="25" fill="#ff9dc0"/>
+<circle cx="100" cy="70" r="25" fill="#ff9dc0"/>
+<circle cx="100" cy="130" r="25" fill="#ff9dc0"/>
+
+<circle cx="100" cy="100" r="12" fill="#ffd166"/>
+
+</svg>
+
+<!-- cỏ -->
+
 <div class="grass">
-  <div class="blade g1"></div>
-  <div class="blade g2"></div>
-  <div class="blade g3"></div>
-  <div class="blade g4"></div>
+<div class="blade g1"></div>
+<div class="blade g2"></div>
+<div class="blade g3"></div>
+<div class="blade g4"></div>
+<div class="blade g5"></div>
+<div class="blade g6"></div>
+<div class="blade g7"></div>
+<div class="blade g8"></div>
 </div>
-  
+
 </div>
 
 </div>
