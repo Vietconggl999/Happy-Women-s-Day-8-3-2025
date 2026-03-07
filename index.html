@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,65 +30,42 @@ margin-bottom:10px;
 
 .message{
 font-size:18px;
-margin-bottom:50px;
+margin-bottom:60px;
 }
 
 /* garden */
 
 .garden{
 display:flex;
-justify-content:center;
-align-items:flex-end;
-gap:80px;
+gap:120px;
 }
 
-/* flower group */
+/* cây */
 
-.flower-group{
-display:flex;
-flex-direction:column;
-align-items:center;
-}
-
-/* flower */
-
-.flower-real{
+.plant{
 width:140px;
 animation:sway 4s ease-in-out infinite;
-transform-origin:bottom;
+transform-origin:bottom center;
 }
 
-.flower-real circle{
-filter:drop-shadow(0 0 12px rgba(255,120,170,0.7));
-}
+.p2{animation-delay:1s;}
+.p3{animation-delay:2s;}
 
-/* wind animation */
+/* gió */
 
 @keyframes sway{
-0%{transform:rotate(-5deg);}
-50%{transform:rotate(5deg);}
-100%{transform:rotate(-5deg);}
+
+0%{transform:rotate(-6deg);}
+50%{transform:rotate(6deg);}
+100%{transform:rotate(-6deg);}
+
 }
 
-/* grass */
+/* glow */
 
-.grass{
-display:flex;
-gap:8px;
-margin-top:-10px;
+.petal{
+filter:drop-shadow(0 0 12px rgba(255,120,170,0.7));
 }
-
-.blade{
-width:6px;
-height:40px;
-background:linear-gradient(#0a5a2c,#1ecb5a);
-border-radius:50px;
-}
-
-.b1{transform:rotate(-25deg);}
-.b2{transform:rotate(-10deg);}
-.b3{transform:rotate(10deg);}
-.b4{transform:rotate(25deg);}
 
 </style>
 </head>
@@ -100,100 +78,86 @@ border-radius:50px;
 
 <p class="message">
 Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
-🌸🌸 💖 Luôn luôn rạng rỡ 💖 🌸🌸
+🌸 🌸 💖 Luôn luôn rạng rỡ 💖 🌸 🌸
 </p>
 
 <div class="garden">
 
-<!-- flower 1 -->
+<!-- cây 1 -->
 
-<div class="flower-group">
+<svg viewBox="0 0 200 300" class="plant p1">
 
-<svg viewBox="0 0 200 300" class="flower-real">
+<!-- stem -->
+<rect x="97" y="120" width="6" height="140" fill="#6a4a2c"/>
 
-<rect x="97" y="90" width="6" height="170" fill="#5c3d1a"/>
+<!-- leaves -->
+<ellipse cx="80" cy="200" rx="22" ry="10" fill="#1f7a3f" transform="rotate(-30 80 200)"/>
+<ellipse cx="120" cy="210" rx="22" ry="10" fill="#1f7a3f" transform="rotate(30 120 210)"/>
 
-<ellipse cx="80" cy="180" rx="25" ry="12" fill="#1f7a3f" transform="rotate(-30 80 180)"/>
-<ellipse cx="120" cy="200" rx="25" ry="12" fill="#1f7a3f" transform="rotate(30 120 200)"/>
+<!-- flower -->
+<circle cx="100" cy="90" r="30" fill="#ff7aa8" class="petal"/>
+<circle cx="70" cy="90" r="20" fill="#ff9dc0" class="petal"/>
+<circle cx="130" cy="90" r="20" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="60" r="20" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="120" r="20" fill="#ff9dc0" class="petal"/>
 
-<circle cx="100" cy="100" r="35" fill="#ff7aa8"/>
-<circle cx="70" cy="100" r="25" fill="#ff9dc0"/>
-<circle cx="130" cy="100" r="25" fill="#ff9dc0"/>
-<circle cx="100" cy="70" r="25" fill="#ff9dc0"/>
-<circle cx="100" cy="130" r="25" fill="#ff9dc0"/>
+<!-- center -->
+<circle cx="100" cy="90" r="10" fill="#ffd166"/>
 
-<circle cx="100" cy="100" r="12" fill="#ffd166"/>
-
-</svg>
-
-<div class="grass">
-<div class="blade b1"></div>
-<div class="blade b2"></div>
-<div class="blade b3"></div>
-<div class="blade b4"></div>
-</div>
-
-</div>
-
-<!-- flower 2 -->
-
-<div class="flower-group">
-
-<svg viewBox="0 0 200 300" class="flower-real">
-
-<rect x="97" y="90" width="6" height="170" fill="#5c3d1a"/>
-
-<ellipse cx="80" cy="180" rx="25" ry="12" fill="#1f7a3f" transform="rotate(-30 80 180)"/>
-<ellipse cx="120" cy="200" rx="25" ry="12" fill="#1f7a3f" transform="rotate(30 120 200)"/>
-
-<circle cx="100" cy="100" r="35" fill="#ff7aa8"/>
-<circle cx="70" cy="100" r="25" fill="#ff9dc0"/>
-<circle cx="130" cy="100" r="25" fill="#ff9dc0"/>
-<circle cx="100" cy="70" r="25" fill="#ff9dc0"/>
-<circle cx="100" cy="130" r="25" fill="#ff9dc0"/>
-
-<circle cx="100" cy="100" r="12" fill="#ffd166"/>
+<!-- grass -->
+<rect x="70" y="260" width="6" height="40" fill="#1ecb5a" transform="rotate(-20 70 260)"/>
+<rect x="90" y="260" width="6" height="40" fill="#1ecb5a"/>
+<rect x="110" y="260" width="6" height="40" fill="#1ecb5a" transform="rotate(20 110 260)"/>
 
 </svg>
 
-<div class="grass">
-<div class="blade b1"></div>
-<div class="blade b2"></div>
-<div class="blade b3"></div>
-<div class="blade b4"></div>
-</div>
 
-</div>
+<!-- cây 2 -->
 
-<!-- flower 3 -->
+<svg viewBox="0 0 200 300" class="plant p2">
 
-<div class="flower-group">
+<rect x="97" y="120" width="6" height="140" fill="#6a4a2c"/>
 
-<svg viewBox="0 0 200 300" class="flower-real">
+<ellipse cx="80" cy="200" rx="22" ry="10" fill="#1f7a3f" transform="rotate(-30 80 200)"/>
+<ellipse cx="120" cy="210" rx="22" ry="10" fill="#1f7a3f" transform="rotate(30 120 210)"/>
 
-<rect x="97" y="90" width="6" height="170" fill="#5c3d1a"/>
+<circle cx="100" cy="90" r="30" fill="#ff7aa8" class="petal"/>
+<circle cx="70" cy="90" r="20" fill="#ff9dc0" class="petal"/>
+<circle cx="130" cy="90" r="20" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="60" r="20" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="120" r="20" fill="#ff9dc0" class="petal"/>
 
-<ellipse cx="80" cy="180" rx="25" ry="12" fill="#1f7a3f" transform="rotate(-30 80 180)"/>
-<ellipse cx="120" cy="200" rx="25" ry="12" fill="#1f7a3f" transform="rotate(30 120 200)"/>
+<circle cx="100" cy="90" r="10" fill="#ffd166"/>
 
-<circle cx="100" cy="100" r="35" fill="#ff7aa8"/>
-<circle cx="70" cy="100" r="25" fill="#ff9dc0"/>
-<circle cx="130" cy="100" r="25" fill="#ff9dc0"/>
-<circle cx="100" cy="70" r="25" fill="#ff9dc0"/>
-<circle cx="100" cy="130" r="25" fill="#ff9dc0"/>
-
-<circle cx="100" cy="100" r="12" fill="#ffd166"/>
+<rect x="70" y="260" width="6" height="40" fill="#1ecb5a" transform="rotate(-20 70 260)"/>
+<rect x="90" y="260" width="6" height="40" fill="#1ecb5a"/>
+<rect x="110" y="260" width="6" height="40" fill="#1ecb5a" transform="rotate(20 110 260)"/>
 
 </svg>
 
-<div class="grass">
-<div class="blade b1"></div>
-<div class="blade b2"></div>
-<div class="blade b3"></div>
-<div class="blade b4"></div>
-</div>
 
-</div>
+<!-- cây 3 -->
+
+<svg viewBox="0 0 200 300" class="plant p3">
+
+<rect x="97" y="120" width="6" height="140" fill="#6a4a2c"/>
+
+<ellipse cx="80" cy="200" rx="22" ry="10" fill="#1f7a3f" transform="rotate(-30 80 200)"/>
+<ellipse cx="120" cy="210" rx="22" ry="10" fill="#1f7a3f" transform="rotate(30 120 210)"/>
+
+<circle cx="100" cy="90" r="30" fill="#ff7aa8" class="petal"/>
+<circle cx="70" cy="90" r="20" fill="#ff9dc0" class="petal"/>
+<circle cx="130" cy="90" r="20" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="60" r="20" fill="#ff9dc0" class="petal"/>
+<circle cx="100" cy="120" r="20" fill="#ff9dc0" class="petal"/>
+
+<circle cx="100" cy="90" r="10" fill="#ffd166"/>
+
+<rect x="70" y="260" width="6" height="40" fill="#1ecb5a" transform="rotate(-20 70 260)"/>
+<rect x="90" y="260" width="6" height="40" fill="#1ecb5a"/>
+<rect x="110" y="260" width="6" height="40" fill="#1ecb5a" transform="rotate(20 110 260)"/>
+
+</svg>
 
 </div>
 
