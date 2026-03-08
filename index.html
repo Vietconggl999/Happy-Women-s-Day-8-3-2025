@@ -103,6 +103,7 @@ filter:drop-shadow(0 0 12px rgba(255,120,170,0.7));
 .grass{
 transform-origin:bottom;
 animation:grassMove 6s ease-in-out infinite;
+filter: blur(6px); /* Làm mờ cỏ để hòa vào nền đen */
 }
 
 @keyframes grassMove{
@@ -199,19 +200,19 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 <!-- plant 1 -->
 <svg viewBox="0 0 200 360" class="plant">
 
-<!-- Thân cây chung (gốc) - làm mờ để hòa vào nền -->
-<rect x="95" y="280" width="12" height="80" fill="#5d4037" rx="4" filter="blur(8px)"/>
+<!-- Thân cây chung (gốc) - GIỮ NGUYÊN, KHÔNG LÀM MỜ -->
+<rect x="95" y="280" width="12" height="80" fill="#5d4037" rx="4"/>
 
-<!-- Thân cây hoa 1 (giữa) - dài hơn - làm mờ -->
-<line x1="100" y1="280" x2="100" y2="65" stroke="#4a7c59" stroke-width="6" stroke-linecap="round" filter="blur(4px)"/>
+<!-- Thân cây hoa 1 (giữa) - GIỮ NGUYÊN, KHÔNG LÀM MỜ -->
+<line x1="100" y1="280" x2="100" y2="65" stroke="#4a7c59" stroke-width="6" stroke-linecap="round"/>
 
-<!-- Thân cây hoa 2 (trái) - dài hơn - làm mờ -->
-<line x1="100" y1="280" x2="40" y2="100" stroke="#4a7c59" stroke-width="6" stroke-linecap="round" filter="blur(4px)"/>
+<!-- Thân cây hoa 2 (trái) - GIỮ NGUYÊN, KHÔNG LÀM MỜ -->
+<line x1="100" y1="280" x2="40" y2="100" stroke="#4a7c59" stroke-width="6" stroke-linecap="round"/>
 
-<!-- Thân cây hoa 3 (phải) - dài hơn - làm mờ -->
-<line x1="100" y1="280" x2="160" y2="100" stroke="#4a7c59" stroke-width="6" stroke-linecap="round" filter="blur(4px)"/>
+<!-- Thân cây hoa 3 (phải) - GIỮ NGUYÊN, KHÔNG LÀM MỜ -->
+<line x1="100" y1="280" x2="160" y2="100" stroke="#4a7c59" stroke-width="6" stroke-linecap="round"/>
 
-<!-- Lá cây -->
+<!-- Lá cây - GIỮ NGUYÊN -->
 <ellipse cx="75" cy="230" rx="28" ry="14" fill="#1f7a3f" transform="rotate(-35 75 230)"/>
 <ellipse cx="125" cy="250" rx="28" ry="14" fill="#1f7a3f" transform="rotate(35 125 250)"/>
 
@@ -239,7 +240,7 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 <circle cx="150" cy="110" r="12" fill="#ffd166"/>
 </g>
 
-<!-- Cỏ che gốc (nhiều hơn) -->
+<!-- Cỏ che gốc - LÀM MỜ để hòa vào nền đen -->
 <g class="grass">
 <path d="M100 360 Q80 250 70 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q60 260 40 200" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
