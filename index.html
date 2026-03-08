@@ -103,7 +103,6 @@ filter:drop-shadow(0 0 12px rgba(255,120,170,0.7));
 .grass{
 transform-origin:bottom;
 animation:grassMove 6s ease-in-out infinite;
-filter: blur(6px); /* Làm mờ cỏ để hòa vào nền đen */
 }
 
 @keyframes grassMove{
@@ -200,23 +199,23 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 <!-- plant 1 -->
 <svg viewBox="0 0 200 360" class="plant">
 
-<!-- Thân cây chung (gốc) - GIỮ NGUYÊN, KHÔNG LÀM MỜ -->
+<!-- Thân cây chung (gốc) - GIỮ NGUYÊN -->
 <rect x="95" y="280" width="12" height="80" fill="#5d4037" rx="4"/>
 
-<!-- Thân cây hoa 1 (giữa) - GIỮ NGUYÊN, KHÔNG LÀM MỜ -->
+<!-- Thân cây hoa 1 (giữa) - GIỮ NGUYÊN -->
 <line x1="100" y1="280" x2="100" y2="65" stroke="#4a7c59" stroke-width="6" stroke-linecap="round"/>
 
-<!-- Thân cây hoa 2 (trái) - GIỮ NGUYÊN, KHÔNG LÀM MỜ -->
+<!-- Thân cây hoa 2 (trái) - GIỮ NGUYÊN -->
 <line x1="100" y1="280" x2="40" y2="100" stroke="#4a7c59" stroke-width="6" stroke-linecap="round"/>
 
-<!-- Thân cây hoa 3 (phải) - GIỮ NGUYÊN, KHÔNG LÀM MỜ -->
+<!-- Thân cây hoa 3 (phải) - GIỮ NGUYÊN -->
 <line x1="100" y1="280" x2="160" y2="100" stroke="#4a7c59" stroke-width="6" stroke-linecap="round"/>
 
 <!-- Lá cây - GIỮ NGUYÊN -->
 <ellipse cx="75" cy="230" rx="28" ry="14" fill="#1f7a3f" transform="rotate(-35 75 230)"/>
 <ellipse cx="125" cy="250" rx="28" ry="14" fill="#1f7a3f" transform="rotate(35 125 250)"/>
 
-<!-- Bông hoa 1 (giữa) -->
+<!-- Bông hoa 1 (giữa) - GIỮ NGUYÊN -->
 <g class="petal">
 <ellipse cx="100" cy="65" rx="30" ry="36" fill="#ff9dc0"/>
 <ellipse cx="135" cy="95" rx="30" ry="36" fill="#ff9dc0"/>
@@ -226,21 +225,21 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 <circle cx="100" cy="95" r="16" fill="#ffd166"/>
 </g>
 
-<!-- Bông hoa 2 (trái) -->
+<!-- Bông hoa 2 (trái) - GIỮ NGUYÊN -->
 <g class="petal">
 <ellipse cx="40" cy="100" rx="26" ry="30" fill="#ff9dc0"/>
 <ellipse cx="55" cy="120" rx="24" ry="28" fill="#ff8fb5"/>
 <circle cx="50" cy="110" r="12" fill="#ffd166"/>
 </g>
 
-<!-- Bông hoa 3 (phải) -->
+<!-- Bông hoa 3 (phải) - GIỮ NGUYÊN -->
 <g class="petal">
 <ellipse cx="160" cy="100" rx="26" ry="30" fill="#ff9dc0"/>
 <ellipse cx="145" cy="120" rx="24" ry="28" fill="#ff8fb5"/>
 <circle cx="150" cy="110" r="12" fill="#ffd166"/>
 </g>
 
-<!-- Cỏ che gốc - LÀM MỜ để hòa vào nền đen -->
+<!-- Cỏ che gốc - GIỮ NGUYÊN -->
 <g class="grass">
 <path d="M100 360 Q80 250 70 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q60 260 40 200" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
@@ -254,6 +253,17 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 <path d="M100 360 Q70 320 75 260" stroke="#22d36a" stroke-width="3" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q130 320 125 260" stroke="#28e070" stroke-width="3" fill="none" stroke-linecap="round"/>
 </g>
+
+<!-- Lớp mờ ở gốc để hòa vào nền đen -->
+<defs>
+<linearGradient id="fadeGradient" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%" style="stop-color:transparent;stop-opacity:0" />
+  <stop offset="100%" style="stop-color:#000;stop-opacity:1" />
+</linearGradient>
+</defs>
+
+<!-- Mờ phần gốc cây và cỏ -->
+<rect x="0" y="280" width="200" height="80" fill="url(#fadeGradient)" opacity="0.7"/>
 
 </svg>
 
