@@ -72,6 +72,8 @@ transform-origin:bottom center;
 filter:drop-shadow(0 0 12px rgba(255,120,170,0.7));
 }
 
+/* grass */
+
 .grass{
 transform-origin:bottom;
 animation:grassMove 6s ease-in-out infinite;
@@ -147,33 +149,25 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 
 <div class="garden">
 
-<!-- plant 1 -->
+<!-- PLANT TEMPLATE -->
 
+<!-- plant 1 -->
 <svg viewBox="0 0 200 360" class="plant">
 
-<!-- stem -->
-  
 <rect x="97" y="110" width="8" height="250" fill="#7a5532" rx="4"/>
-  
-<!-- leaves -->
+
 <ellipse cx="75" cy="230" rx="28" ry="14" fill="#1f7a3f" transform="rotate(-35 75 230)"/>
 <ellipse cx="125" cy="250" rx="28" ry="14" fill="#1f7a3f" transform="rotate(35 125 250)"/>
 
-<!-- flower (more natural) -->
-
 <g class="petal">
-
-<ellipse cx="100" cy="65" rx="30" ry="36" fill="#ff9dc0" transform="rotate(-5 100 65)"/>
-<ellipse cx="135" cy="95" rx="30" ry="36" fill="#ff9dc0" transform="rotate(20 135 95)"/>
-<ellipse cx="65" cy="95" rx="30" ry="36" fill="#ff9dc0" transform="rotate(-20 65 95)"/>
-<ellipse cx="115" cy="120" rx="28" ry="34" fill="#ff8fb5" transform="rotate(15 115 120)"/>
-<ellipse cx="85" cy="120" rx="28" ry="34" fill="#ff8fb5" transform="rotate(-15 85 120)"/>
-
+<ellipse cx="100" cy="65" rx="30" ry="36" fill="#ff9dc0"/>
+<ellipse cx="135" cy="95" rx="30" ry="36" fill="#ff9dc0"/>
+<ellipse cx="65" cy="95" rx="30" ry="36" fill="#ff9dc0"/>
+<ellipse cx="115" cy="120" rx="28" ry="34" fill="#ff8fb5"/>
+<ellipse cx="85" cy="120" rx="28" ry="34" fill="#ff8fb5"/>
 </g>
 
 <circle cx="100" cy="95" r="16" fill="#ffd166"/>
-
-<!-- realistic grass -->
 
 <g class="grass">
 <path d="M100 360 Q80 250 70 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
@@ -181,17 +175,15 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 <path d="M100 360 Q120 250 130 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q150 260 165 210" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q90 280 95 200" stroke="#28e070" stroke-width="4" fill="none" stroke-linecap="round"/>
-
 </g>
 
 </svg>
 
 <!-- plant 2 -->
-
 <svg viewBox="0 0 200 360" class="plant p2">
 
 <rect x="97" y="110" width="8" height="250" fill="#7a5532" rx="4"/>
-  
+
 <ellipse cx="75" cy="230" rx="28" ry="14" fill="#1f7a3f" transform="rotate(-35 75 230)"/>
 <ellipse cx="125" cy="250" rx="28" ry="14" fill="#1f7a3f" transform="rotate(35 125 250)"/>
 
@@ -211,17 +203,15 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 <path d="M100 360 Q120 250 130 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q150 260 165 210" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q90 280 95 200" stroke="#28e070" stroke-width="4" fill="none" stroke-linecap="round"/>
-
 </g>
-  
+
 </svg>
 
 <!-- plant 3 -->
-
 <svg viewBox="0 0 200 360" class="plant p3">
 
 <rect x="97" y="110" width="8" height="250" fill="#7a5532" rx="4"/>
-  
+
 <ellipse cx="75" cy="230" rx="28" ry="14" fill="#1f7a3f" transform="rotate(-35 75 230)"/>
 <ellipse cx="125" cy="250" rx="28" ry="14" fill="#1f7a3f" transform="rotate(35 125 250)"/>
 
@@ -234,16 +224,15 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 </g>
 
 <circle cx="100" cy="95" r="16" fill="#ffd166"/>
-  
+
 <g class="grass">
 <path d="M100 360 Q80 250 70 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q60 260 40 200" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q120 250 130 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q150 260 165 210" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q90 280 95 200" stroke="#28e070" stroke-width="4" fill="none" stroke-linecap="round"/>
-
 </g>
-  
+
 </svg>
 
 </div>
@@ -257,6 +246,6 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 <div class="firefly" style="top:40%;left:20%"></div>
 <div class="firefly" style="top:45%;left:80%"></div>
 <div class="firefly" style="top:30%;left:60%"></div>
-  
+
 </body>
 </html>
