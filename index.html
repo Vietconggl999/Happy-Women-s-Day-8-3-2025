@@ -176,26 +176,12 @@ animation:fly 6s infinite ease-in-out alternate;
 100%{transform:translate(-100px,100px);opacity:0.4;}
 }
 
-/* Đất xanh lá mờ ảo */
-.earth {
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 150px;
-background: linear-gradient(to top, #1a5c2a, #2d8a4a, transparent);
-filter: blur(20px);
-opacity: 0.7;
-z-index: 2;
-pointer-events: none;
-}
-
 /* Cỏ um tùm che gốc */
 .umbrella-grass {
 position: absolute;
 bottom: 0;
 width: 100%;
-height: 120px;
+height: 150px;
 pointer-events: none;
 z-index: 5;
 }
@@ -207,8 +193,9 @@ bottom: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background: linear-gradient(to top, #1a5c2a, #2d8a4a);
+background: linear-gradient(to top, #1a5c2a, #2d8a4a, transparent);
 border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+filter: blur(10px);
 }
 
 </style>
@@ -234,8 +221,17 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 <!-- plant 1 -->
 <svg viewBox="0 0 200 360" class="plant">
 
-<!-- Thân cây chung -->
-<rect x="97" y="110" width="8" height="250" fill="#7a5532" rx="4"/>
+<!-- Thân cây chung (gốc) -->
+<rect x="95" y="280" width="12" height="80" fill="#5d4037" rx="4"/>
+
+<!-- Thân cây hoa 1 (giữa) - dài hơn -->
+<line x1="100" y1="280" x2="100" y2="65" stroke="#4a7c59" stroke-width="6" stroke-linecap="round"/>
+
+<!-- Thân cây hoa 2 (trái) - dài hơn -->
+<line x1="100" y1="280" x2="40" y2="100" stroke="#4a7c59" stroke-width="6" stroke-linecap="round"/>
+
+<!-- Thân cây hoa 3 (phải) - dài hơn -->
+<line x1="100" y1="280" x2="160" y2="100" stroke="#4a7c59" stroke-width="6" stroke-linecap="round"/>
 
 <!-- Lá cây -->
 <ellipse cx="75" cy="230" rx="28" ry="14" fill="#1f7a3f" transform="rotate(-35 75 230)"/>
@@ -265,19 +261,22 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 <circle cx="150" cy="110" r="12" fill="#ffd166"/>
 </g>
 
-<!-- Cỏ che gốc -->
+<!-- Cỏ che gốc (nhiều hơn) -->
 <g class="grass">
 <path d="M100 360 Q80 250 70 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q60 260 40 200" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q120 250 130 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q150 260 165 210" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q90 280 95 200" stroke="#28e070" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M100 360 Q50 280 30 220" stroke="#1ecb5a" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M100 360 Q150 280 170 220" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
+<path d="M100 360 Q80 300 85 240" stroke="#28e070" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M100 360 Q120 300 115 240" stroke="#1ecb5a" stroke-width="4" fill="none" stroke-linecap="round"/>
+<path d="M100 360 Q70 320 75 260" stroke="#22d36a" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M100 360 Q130 320 125 260" stroke="#28e070" stroke-width="3" fill="none" stroke-linecap="round"/>
 </g>
 
 </svg>
-
-<!-- Đất xanh lá mờ ảo -->
-<div class="earth"></div>
 
 <!-- Cỏ um tùm che gốc -->
 <div class="umbrella-grass"></div>
