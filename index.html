@@ -54,7 +54,7 @@ font-size:26px;
 margin-bottom:50px;
 line-height:1.6;
 text-align: center;
-color: #ffffff; /* Đổi màu chữ thành trắng */
+color: #ffffff;
 text-shadow: 0 0 10px rgba(255,255,255,0.5);
 }
 
@@ -176,12 +176,26 @@ animation:fly 6s infinite ease-in-out alternate;
 100%{transform:translate(-100px,100px);opacity:0.4;}
 }
 
-/* cỏ um tùm che gốc */
+/* Đất xanh lá mờ ảo */
+.earth {
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 150px;
+background: linear-gradient(to top, #1a5c2a, #2d8a4a, transparent);
+filter: blur(20px);
+opacity: 0.7;
+z-index: 2;
+pointer-events: none;
+}
+
+/* Cỏ um tùm che gốc */
 .umbrella-grass {
 position: absolute;
 bottom: 0;
 width: 100%;
-height: 100px;
+height: 120px;
 pointer-events: none;
 z-index: 5;
 }
@@ -220,34 +234,38 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 <!-- plant 1 -->
 <svg viewBox="0 0 200 360" class="plant">
 
+<!-- Thân cây chung -->
 <rect x="97" y="110" width="8" height="250" fill="#7a5532" rx="4"/>
 
+<!-- Lá cây -->
 <ellipse cx="75" cy="230" rx="28" ry="14" fill="#1f7a3f" transform="rotate(-35 75 230)"/>
 <ellipse cx="125" cy="250" rx="28" ry="14" fill="#1f7a3f" transform="rotate(35 125 250)"/>
 
+<!-- Bông hoa 1 (giữa) -->
 <g class="petal">
-
-<!-- hoa giữa -->
 <ellipse cx="100" cy="65" rx="30" ry="36" fill="#ff9dc0"/>
 <ellipse cx="135" cy="95" rx="30" ry="36" fill="#ff9dc0"/>
 <ellipse cx="65" cy="95" rx="30" ry="36" fill="#ff9dc0"/>
 <ellipse cx="115" cy="120" rx="28" ry="34" fill="#ff8fb5"/>
 <ellipse cx="85" cy="120" rx="28" ry="34" fill="#ff8fb5"/>
-
-<!-- hoa trái -->
-<ellipse cx="40" cy="100" rx="26" ry="30" fill="#ff9dc0"/>
-<ellipse cx="55" cy="120" rx="24" ry="28" fill="#ff8fb5"/>
-
-<!-- hoa phải -->
-<ellipse cx="160" cy="100" rx="26" ry="30" fill="#ff9dc0"/>
-<ellipse cx="145" cy="120" rx="24" ry="28" fill="#ff8fb5"/>
-
+<circle cx="100" cy="95" r="16" fill="#ffd166"/>
 </g>
 
-<circle cx="100" cy="95" r="16" fill="#ffd166"/>
+<!-- Bông hoa 2 (trái) -->
+<g class="petal">
+<ellipse cx="40" cy="100" rx="26" ry="30" fill="#ff9dc0"/>
+<ellipse cx="55" cy="120" rx="24" ry="28" fill="#ff8fb5"/>
 <circle cx="50" cy="110" r="12" fill="#ffd166"/>
+</g>
+
+<!-- Bông hoa 3 (phải) -->
+<g class="petal">
+<ellipse cx="160" cy="100" rx="26" ry="30" fill="#ff9dc0"/>
+<ellipse cx="145" cy="120" rx="24" ry="28" fill="#ff8fb5"/>
 <circle cx="150" cy="110" r="12" fill="#ffd166"/>
-  
+</g>
+
+<!-- Cỏ che gốc -->
 <g class="grass">
 <path d="M100 360 Q80 250 70 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q60 260 40 200" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
@@ -257,6 +275,9 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 </g>
 
 </svg>
+
+<!-- Đất xanh lá mờ ảo -->
+<div class="earth"></div>
 
 <!-- Cỏ um tùm che gốc -->
 <div class="umbrella-grass"></div>
