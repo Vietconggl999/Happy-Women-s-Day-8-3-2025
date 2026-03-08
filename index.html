@@ -6,17 +6,33 @@
 
 <style>
 
-body{
-margin:0;
-height:100vh;
-background: radial-gradient(circle at top, #0a2a3a, #02121c 40%, #000 80%);
-display:flex;
-justify-content:center;
-align-items:center;
-font-family:Arial;
-color:white;
-text-align:center;
-overflow:hidden;
+body {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at center, #02121f 0%, #000 100%);
+  overflow: hidden;
+}
+
+/* lớp sao */
+.stars {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-image:
+    radial-gradient(2px 2px at 20px 30px, rgba(255,255,255,0.6), transparent),
+    radial-gradient(1.5px 1.5px at 40px 70px, rgba(255,255,255,0.4), transparent),
+    radial-gradient(1px 1px at 130px 80px, rgba(255,255,255,0.5), transparent),
+    radial-gradient(2px 2px at 160px 120px, rgba(255,255,255,0.3), transparent),
+    radial-gradient(1px 1px at 200px 200px, rgba(255,255,255,0.4), transparent),
+    radial-gradient(2px 2px at 300px 150px, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 400px 100px, rgba(255,255,255,0.3), transparent),
+    radial-gradient(2px 2px at 500px 200px, rgba(255,255,255,0.5), transparent),
+    radial-gradient(1px 1px at 600px 50px, rgba(255,255,255,0.4), transparent),
+    radial-gradient(1.5px 1.5px at 700px 120px, rgba(255,255,255,0.4), transparent);
+  
+  background-repeat: repeat;
+  background-size: 800px 600px;
+  opacity: 0.6;
 }
 
 /* text */
@@ -179,15 +195,28 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 <ellipse cx="125" cy="250" rx="28" ry="14" fill="#1f7a3f" transform="rotate(35 125 250)"/>
 
 <g class="petal">
+
+<!-- hoa giữa -->
 <ellipse cx="100" cy="65" rx="30" ry="36" fill="#ff9dc0"/>
 <ellipse cx="135" cy="95" rx="30" ry="36" fill="#ff9dc0"/>
 <ellipse cx="65" cy="95" rx="30" ry="36" fill="#ff9dc0"/>
 <ellipse cx="115" cy="120" rx="28" ry="34" fill="#ff8fb5"/>
 <ellipse cx="85" cy="120" rx="28" ry="34" fill="#ff8fb5"/>
+
+<!-- hoa trái -->
+<ellipse cx="40" cy="100" rx="26" ry="30" fill="#ff9dc0"/>
+<ellipse cx="55" cy="120" rx="24" ry="28" fill="#ff8fb5"/>
+
+<!-- hoa phải -->
+<ellipse cx="160" cy="100" rx="26" ry="30" fill="#ff9dc0"/>
+<ellipse cx="145" cy="120" rx="24" ry="28" fill="#ff8fb5"/>
+
 </g>
 
 <circle cx="100" cy="95" r="16" fill="#ffd166"/>
-
+<circle cx="50" cy="110" r="12" fill="#ffd166"/>
+<circle cx="150" cy="110" r="12" fill="#ffd166"/>
+  
 <g class="grass">
 <path d="M100 360 Q80 250 70 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
 <path d="M100 360 Q60 260 40 200" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
@@ -198,61 +227,6 @@ Chúc Mai 8/3 vui vẻ, hạnh phúc và càng ngày xinh đẹp hơn.<br>
 
 </svg>
 
-<!-- plant 2 -->
-<svg viewBox="0 0 200 360" class="plant p2">
-
-<rect x="97" y="110" width="8" height="250" fill="#7a5532" rx="4"/>
-
-<ellipse cx="75" cy="230" rx="28" ry="14" fill="#1f7a3f" transform="rotate(-35 75 230)"/>
-<ellipse cx="125" cy="250" rx="28" ry="14" fill="#1f7a3f" transform="rotate(35 125 250)"/>
-
-<g class="petal">
-<ellipse cx="100" cy="65" rx="30" ry="36" fill="#ff9dc0"/>
-<ellipse cx="135" cy="95" rx="30" ry="36" fill="#ff9dc0"/>
-<ellipse cx="65" cy="95" rx="30" ry="36" fill="#ff9dc0"/>
-<ellipse cx="115" cy="120" rx="28" ry="34" fill="#ff8fb5"/>
-<ellipse cx="85" cy="120" rx="28" ry="34" fill="#ff8fb5"/>
-</g>
-
-<circle cx="100" cy="95" r="16" fill="#ffd166"/>
-
-<g class="grass">
-<path d="M100 360 Q80 250 70 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
-<path d="M100 360 Q60 260 40 200" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
-<path d="M100 360 Q120 250 130 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
-<path d="M100 360 Q150 260 165 210" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
-<path d="M100 360 Q90 280 95 200" stroke="#28e070" stroke-width="4" fill="none" stroke-linecap="round"/>
-</g>
-
-</svg>
-
-<!-- plant 3 -->
-<svg viewBox="0 0 200 360" class="plant p3">
-
-<rect x="97" y="110" width="8" height="250" fill="#7a5532" rx="4"/>
-
-<ellipse cx="75" cy="230" rx="28" ry="14" fill="#1f7a3f" transform="rotate(-35 75 230)"/>
-<ellipse cx="125" cy="250" rx="28" ry="14" fill="#1f7a3f" transform="rotate(35 125 250)"/>
-
-<g class="petal">
-<ellipse cx="100" cy="65" rx="30" ry="36" fill="#ff9dc0"/>
-<ellipse cx="135" cy="95" rx="30" ry="36" fill="#ff9dc0"/>
-<ellipse cx="65" cy="95" rx="30" ry="36" fill="#ff9dc0"/>
-<ellipse cx="115" cy="120" rx="28" ry="34" fill="#ff8fb5"/>
-<ellipse cx="85" cy="120" rx="28" ry="34" fill="#ff8fb5"/>
-</g>
-
-<circle cx="100" cy="95" r="16" fill="#ffd166"/>
-
-<g class="grass">
-<path d="M100 360 Q80 250 70 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
-<path d="M100 360 Q60 260 40 200" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
-<path d="M100 360 Q120 250 130 170" stroke="#1ecb5a" stroke-width="6" fill="none" stroke-linecap="round"/>
-<path d="M100 360 Q150 260 165 210" stroke="#22d36a" stroke-width="5" fill="none" stroke-linecap="round"/>
-<path d="M100 360 Q90 280 95 200" stroke="#28e070" stroke-width="4" fill="none" stroke-linecap="round"/>
-</g>
-
-</svg>
 
 </div>
 
